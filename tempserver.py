@@ -12,7 +12,7 @@ def handle_client(conn, addr):
 
     connected = True
     while connected:
-        msg = conn.recv(SIZE).decode(FORMAT)
+        msg = conn.recv(SIZE)
         if msg == DISCONNECT_MSG:
             connected = False
 
