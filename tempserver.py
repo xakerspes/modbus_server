@@ -17,7 +17,7 @@ def handle_client(conn, addr):
             connected = False
 
         print(f"[{addr}] {msg}")
-        conn.send("sdfdsfds")
+        # conn.send("sdfdsfds")
 
     conn.close()
 
